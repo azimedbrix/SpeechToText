@@ -1,0 +1,6 @@
+module Pods_SpeechtoTextConversion {
+  umbrella header "Pods-SpeechtoTextConversion-umbrella.h"
+
+  export *
+  module * { export * }
+}

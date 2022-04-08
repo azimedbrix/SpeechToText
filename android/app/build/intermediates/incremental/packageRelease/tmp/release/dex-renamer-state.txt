@@ -1,0 +1,7 @@
+#Fri Apr 08 14:40:50 IST 2022
+base.0=/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex

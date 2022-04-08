@@ -1,0 +1,71 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.speechtotextconversion"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml
+10
+11    <queries>
+11-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:4:3-8:15
+12        <intent>
+12-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:5:9-7:18
+13            <action android:name="android.speech.RecognitionService" />
+13-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:6:13-72
+13-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:6:21-69
+14        </intent>
+15    </queries>
+16
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:9:5-67
+17-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:9:22-64
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->[:react-native-voice] /Users/admin/Documents/Amod/SpeechtoTextConversion/node_modules/react-native-voice/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-71
+18-->[:react-native-voice] /Users/admin/Documents/Amod/SpeechtoTextConversion/node_modules/react-native-voice/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-68
+19
+20    <application
+20-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:11:5-29:19
+21        android:name="com.speechtotextconversion.MainApplication"
+21-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:12:7-38
+22        android:allowBackup="false"
+22-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:16:7-34
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.6.0] /Users/admin/.gradle/caches/transforms-3/9f18c6b50baa776d71894ad120630276/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:14:7-41
+25        android:label="@string/app_name"
+25-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:13:7-39
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:15:7-52
+27        android:theme="@style/AppTheme" >
+27-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:17:7-38
+28        <activity
+28-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:18:7-28:18
+29            android:name="com.speechtotextconversion.MainActivity"
+29-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:19:9-37
+30            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+30-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:21:9-86
+31            android:label="@string/app_name"
+31-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:20:9-41
+32            android:launchMode="singleTask"
+32-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:22:9-40
+33            android:windowSoftInputMode="adjustResize" >
+33-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:23:9-51
+34            <intent-filter>
+34-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:24:9-27:25
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:25:13-65
+35-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:25:21-62
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:26:13-73
+37-->/Users/admin/Documents/Amod/SpeechtoTextConversion/android/app/src/main/AndroidManifest.xml:26:23-70
+38            </intent-filter>
+39        </activity>
+40    </application>
+41
+42</manifest>
