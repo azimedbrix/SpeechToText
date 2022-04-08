@@ -28,7 +28,7 @@ class App extends Component {
     LangResult1: '',
     LangResult2: '',
     partialResults: [],
-    status: 'Start to Speak',
+    status: 'Start to Spe',
     DefaultLang: 'Select Lang',
     LangName1: 'English',
     LangName2: 'English',
@@ -109,6 +109,7 @@ class App extends Component {
   onSpeechError = (e) => {
     //Invoked when an error occurs.
     console.log('onSpeechError: ', e);
+    Toast.show(e)
     this.setState({
       error: JSON.stringify(e.error),
     });
@@ -241,23 +242,16 @@ class App extends Component {
   render() {
 
     return (
-      // <SafeAreaView style={styles.container}>
-      //   <KeyboardAvoidingView style={{ flex: 1 }}  >
       <View style={styles.container}>
         <Text style={styles.titleText}>
           Speech to Text
         </Text>
-
-        {/* <Text style={styles.textWithSpaceStyle}>
-            {`Started: ${this.state.started}`}
-          </Text> */}
         <View style={{ flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: Constant.width / 1 }}>
           <Dropdown
             style={[{
               width: Constant.width / 3,
               height: 50,
-              //borderColor: "black",
-              //borderWidth: 1,
+      
               backgroundColor: "white",
               marginTop: 15,
               borderRadius: 5,
@@ -295,8 +289,6 @@ class App extends Component {
             style={[{
               width: Constant.width / 3,
               height: 50,
-              //borderColor: "black",
-              //borderWidth: 1,
               backgroundColor: "white",
               marginTop: 15,
               borderRadius: 5,
@@ -328,7 +320,7 @@ class App extends Component {
                 // this.setState({ modalVisible : true})
                 setTimeout(() => {
                   this.resultLang(this.state.LangResult1)
-                }, 500);
+                }, 100);
               }
 
             }}
@@ -348,11 +340,8 @@ class App extends Component {
 
 
 
-
-
         {
           this.state.results.length > 0 ?
-            <ScrollView>
               <View style={{
                 marginTop: 30,
                 paddingHorizontal: 20,
@@ -372,7 +361,7 @@ class App extends Component {
                 <Text style={styles.textStyleResults}>
                   Results
                 </Text>
-                <View style={{ height: 50, flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{  flexDirection: 'row', alignItems: 'center' }}>
                   <Text
                     style={{ fontSize: 10 }}>
                     {this.state.LangName1}
@@ -383,7 +372,7 @@ class App extends Component {
                   </Text>
 
                 </View>
-                <View style={{ height: 50, flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{  flexDirection: 'row', alignItems: 'center' }}>
                   <Text
                     style={{ fontSize: 10 }}>
                     {this.state.LangName2}
@@ -418,7 +407,6 @@ class App extends Component {
 
                 </View>
               </View>
-            </ScrollView>
             : null
         }
 
@@ -444,29 +432,8 @@ class App extends Component {
               </TouchableHighlight>
           }
         </View>
-        <Modal
-          animationType="slide"
-          visible={this.state.modalVisible}
-          transparent={true}
-          // onRequestClose={() => {
-          //   this.setModalVisible(!this.state.modalVisible);
-          // }}
-          style={{ flex: 1, }}
-        >
-
-          <Pressable onPress={() => this.setState({ modalVisible: false })}>
-            <View style={{ height: "100%", backgroundColor: 'rgba(0, 0, 0, 0.74)' }}>
-
-             
-
-            </View>
-          </Pressable>
-        </Modal >
-
       </View>
 
-      //     </KeyboardAvoidingView>
-      // </SafeAreaView>
     );
   }
 }
@@ -521,6 +488,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     padding: 10,
+    flex: 1
   },
   textStyleResults: {
     textAlign: 'center',
